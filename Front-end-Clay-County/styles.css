@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header basic outline added by Jacob down to topnav a:hover*/
+.header {
+    position: relative; /* Allows absolute positioning of child elements */
+    padding: 30px;
+    width: 100%;
+    height: 150px; /* Adjust as needed */
+    background-image: linear-gradient(#4d7080, #295366);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header-logo {
+    position: absolute;
+    left: 20px; /* Anchors the logo to the left */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically centers the logo */
+    width: 100px;
+    height: auto;
+}
+
+.header-text {
+    /* Optional: Style for the center text in the header */
+    font-size: 24px;
+}
+
+.topnav {
+    position: absolute;
+    bottom: 0; /* Anchors the navigation to the bottom */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.topnav a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.topnav a:hover {
+    background-color: #3d9be9;
+    color: black;
+}
+
+/*login link */
+.login-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    font-weight: bold;
+}
+
+/* Icon styling */
+.login-link ion-icon {
+    font-size: 20px;
+}
+
+/* Hover effect */
+.login-link:hover {
+    color: lightgray;
+}
+
+
+body {
+    height: 150vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+/* Form */
+.container {
+   /* margin-top: 40rcap;*/
+    height: 50vh;
+    padding-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    gap: 15px;
+}
+.section-label {
+    margin-bottom: 8px;
+}
+.section input,
+.section select {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+}
+/* filter dropdown hide */
+.filter-hide {
+    display: none;
+}
+
+/* 4x5 grid  */
+.outsideGrid {
+    padding-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 1000px;
+    height: 1000px;
+}
+
+/* 4x5 grid cells */
+ .cell {
+  border: 1px solid black;
+  background-color: white;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%; 
+  height: 100%; 
+}
+
+/* 6x6 cells within 4x5 cells */
+.innerCell {
+  border: 1px solid black;
+  background-color: white;
+  width: 100%; 
+  height: 100%; 
+
+}
+/* submit button modification and table modification */
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter-container {
+    display: inline-block;
+}
+
+table {
+    border-collapse:collapse;
+    width: 100%;
+
+}
+
+th {
+    height: 40px;
+}
+
+.facebook-icon{
+    color:aqua;
+    font-size: 30px;
+   text-decoration: none;
+}
+
+.instagram-icon{
+    color:red;
+    font-size: 30px;
+}
+
+/* Added by jacob */
+.footer{
+    width: 100%;
+    padding:20px;
+    text-align: center;
+    font-size: 22px;
+    margin-top:20px;
+    background-image: linear-gradient(#4d7080,#295366);
+    color:white;
+  }
+
+  .highlight {
+    background-color: yellow;
+  }
