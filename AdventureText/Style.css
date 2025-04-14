@@ -260,3 +260,122 @@ body {
 #decisionButton {
 margin-left: 10px;
 }
+
+/* ---------- Tablet (landscape/portrait) ---------- */
+@media (max-width: 1024px) {
+    #leftTop,
+    #bottomLeft,
+    #rightTop,
+    #bottomRight {
+        float: none;
+        margin: 10px auto;
+        width: 90%;
+        height: auto;
+    }
+
+    #initialImg,
+    #playerImage {
+        width: 100%;
+        height: auto;
+    }
+
+    #prompt {
+        top: 40%;
+        left: 35%;
+    }
+
+    #characterBg {
+        left: 10%;
+        top: 25%;
+        width: 90%;
+    }
+
+    .tabcontent,
+    #coverPicture {
+        width: 100%;
+        height: auto;
+    }
+
+    #progButton {
+        right: 10px;
+        bottom: 10px;
+        position: relative;
+    }
+
+    #yesButton, #noButton {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 10px;
+    }
+}
+
+/* ---------- Mobile Devices ---------- */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    #leftTop,
+    #bottomLeft,
+    #rightTop,
+    #bottomRight {
+        width: 95%;
+        margin: 10px auto;
+        float: none;
+        height: auto;
+    }
+
+    #initialImg,
+    #playerImage {
+        width: 100%;
+        height: auto;
+    }
+
+    #prompt {
+        width: 80%;
+        height: auto;
+        top: 35%;
+        left: 10%;
+        font-size: 14px;
+    }
+
+    #decision {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #characterBg {
+        top: 20%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .tab button {
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .tabcontent,
+    #coverPicture {
+        width: 100%;
+        height: auto;
+    }
+
+    #progButton {
+        right: 5px;
+        bottom: 10px;
+        position: relative;
+    }
+
+    #yesButton, #noButton {
+        position: relative;
+        margin: 5px;
+    }
+
+    #decisionButton {
+        display: block;
+        margin-top: 10px;
+    }
+}
