@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Adventure Game</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js" defer></script>
+</head>
+<body>
+    <div id="prompt">
+        <p id="paraPrompt"></p>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+    <div id="characterBg">
+        <div class="tab">
+        <button class="tablinks" onclick="openCharBg(event, 'vincent')">VINCENT(ME)</button>
+        <p>Vincent</p>
+    </div>
+    <div id="coverPicture"></div>
+    <div id="vincent" class="tabcontent">
+        <img class="NotesImages" src="Images/vincent.png">
+        <p></p>
+    </div>
+    </div>
+    <div id="bg-image"></div>
+    <div id="leftTop">
+        <img id="initialImg" src="Images/lyra.jpg"> 
+    </div>
+    <div id="rightTop">                                  
+        <button id="progButton">Continue</button>
+        <p id="story" tabindex="0"><span class="instructionStats">Press Space To Continue Text.</span><br><br></p>
+    </div>  
+    <div id="bottomRight">
+        <p>When A Decision appears press either 1, 2, 3, 4, or 5.</p>
+        <p id="decisionText"></p>
+        <input type="number" id="decision" pattern="/^[1-5]$/">
+        <button id="decisionButton">Enter</button>
+    </div>
+    <div id="bottomLeft">
+        <img id="playerImage" src="Images/vincent.png">
+        <button id="playButton">Play Audio</button>
+        <button id="resetButton">Reset/Restart</button>
+        <button id="charBg">Character Background</button>
+    </div>
+    <audio id="audio" src="Intro.mp3" type="audio/mp3"></audio>
+</body>
+</html>
