@@ -379,3 +379,68 @@ margin-left: 10px;
         margin-top: 10px;
     }
 }
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    #leftTop,
+    #bottomLeft,
+    #rightTop,
+    #bottomRight {
+        width: 95%;
+        margin: 10px auto;
+        float: none;
+        height: auto;
+    }
+
+    #initialImg,
+    #playerImage {
+        width: 100%;
+        height: auto;
+    }
+
+    #prompt {
+        top: 38%;
+        left: 30%;
+        width: 80%;
+        font-size: 16px;
+    }
+
+    #characterBg {
+        top: 22%;
+        left: 8%;
+        width: 90%;
+    }
+
+    .tab button {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .tabcontent,
+    #coverPicture {
+        width: 100%;
+        height: auto;
+    }
+
+    #progButton {
+        right: 8px;
+        bottom: 10px;
+        position: relative;
+    }
+
+    #yesButton,
+    #noButton {
+        position: relative;
+        margin: 8px;
+    }
+
+    #decisionButton {
+        display: block;
+        margin-top: 12px;
+    }
+}
+
