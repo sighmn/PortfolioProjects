@@ -261,7 +261,6 @@ body {
 margin-left: 10px;
 }
 
-/* ---------- Tablet (landscape/portrait) ---------- */
 @media (max-width: 1200px) {
     #leftTop,
     #bottomLeft,
@@ -273,10 +272,13 @@ margin-left: 10px;
         height: auto;
     }
 
-    #initialImg,
-    #playerImage {
+    #initialImg {
         width: 100%;
         height: auto;
+    }
+
+    #playerImg {
+        display: none;
     }
 
     #prompt {
