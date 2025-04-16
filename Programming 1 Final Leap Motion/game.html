@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FFXIV Rotation Game</title>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r72/three.js"></script>
+  <script src="leapjs-1.1.1/leap-1.1.1.js"></script>
+ <!-- <script src="leapjs-1.1.1\leap-1.1.1.min.js"></script> -->
+  <script src="leapjs-rigged-hand\build\leap.rigged-hand-0.1.7.js"></script>
+  <!-- <script src="leapjs-rigged-hand\build\leap.rigged-hand-0.1.7.min.js"></script> -->
+<style> 
+ 
+   body { 
+    display: block; 
+  }
+
+  .important { 
+    color:red; 
+  }
+  .design { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: #ccc;
+    border: 5px solid black; 
+    display: block; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+  }
+
+  .mainCanvas {
+      
+       background-color: #4682B4;
+       border: 5px solid black; 
+       display: block; 
+       margin: 10px; 
+       margin-top: 50px;
+       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+  }
+
+  .canvas-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+  }
+
+  #leapMotionCanvas {
+    border: 5px solid black;
+  }
+
+  #message {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: red; 
+    
+  }
+
+</style>
+</head>
+
+<body>
+  <div class="canvas-container">
+  <canvas class="mainCanvas" id="destinationCanvas" width="400" height="200"></canvas>
+  <canvas  class="mainCanvas" id="sourceCanvas" width="400" height="200"> </canvas>
+  </div>
+  <div id ="message"></div>
+  <p>Ability names in order of rotation</p>
+  <p><strong>Make sure you understand each ability and not just the order!</strong></p>
+  <p id="desc"><br></p>
+  <script src="game.js"></script>
+  
+</body>
+
+</html>
